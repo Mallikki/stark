@@ -1,8 +1,11 @@
-<div class="section-border">
+<div class="news-section">
 	<div fxLayout="column" fxLayoutAlign="space-between" fxLayout.gt-xs="row wrap">
-		<ng-content class="mat-display-2" select=".news-item-title"></ng-content>
-		<ng-content class="image" select=".news-image"></ng-content>
 	</div>
-	<div class="mat-body-2 information">Release: {{ release }} ({{ newsDate }})</div>
-	<ng-content select=".news-item-content"></ng-content>
+	<div>
+		<ng-content class="mat-display-2" select=".news-item-title"></ng-content>
+		<div class="news-item-information">Release: {{ release }} ({{ newsDate }})</div>
+		<p>
+			<ng-content select=".news-item-content"></ng-content>
+		</p>
+	</div>
 </div>

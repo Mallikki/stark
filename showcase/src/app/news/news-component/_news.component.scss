@@ -1,28 +1,32 @@
 .first-news-image {
-  background: url("/assets/images/screenshots/showcase-screenshot.png") no-repeat center center;
-  width: 250px;
-  height: 60px;
-  display: inline-block;
-  background-size: contain;
-}
-
-.second-news-image {
-  background: url("/assets/stark-core/logo/stark_logo_black.svg") no-repeat center center;
   width: 180px;
-  height: 55px;
-  background-size: 100% 100%;
+  background-size: contain;
+  margin-right: 25px;
 }
 
-@media #{$desktop-query} {
-  .first-news-image {
-    width: 750px;
-    height: 200px;
+.custom-flex-section {
+  padding-bottom: 26px;
+  border-bottom: 1px solid mat-color($grey-palette, 400);
+  margin-bottom: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media #{$mobile-only-query} {
+  .custom-flex-section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
   }
-}
 
-@media #{$tablet-only-query} {
   .first-news-image {
-    width: 500px;
-    height: 100px;
+    height: 50px;
+    width: 130px;
+    margin-left: 30px;
   }
 }

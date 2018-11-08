@@ -1,5 +1,9 @@
-.section-border {
-  padding-bottom: 26px;
-  border-bottom: 1px solid mat-color($grey-palette, 400);
-  margin-bottom: 20px;
+.news-section {
+  .news-item-title {
+    margin-bottom: 0;
+  }
+
+  .news-item-information {
+    font-size: 12px;
+  }
 }
